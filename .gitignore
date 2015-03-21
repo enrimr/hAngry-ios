@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io
 
+hAngry/Keys.plist
+
 ### OSX ###
 .DS_Store
 .AppleDouble

@@ -30,6 +30,7 @@
 		E5BF60881ABD713A00FB3103 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BF60831ABD713A00FB3103 /* ParseCrashReporting.framework */; };
 		E5BF60891ABD713A00FB3103 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BF60841ABD713A00FB3103 /* ParseFacebookUtils.framework */; };
 		E5BF608A1ABD713A00FB3103 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BF60851ABD713A00FB3103 /* ParseUI.framework */; };
+		E5BF608F1ABD769100FB3103 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5BF608E1ABD769100FB3103 /* Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		E5BF60841ABD713A00FB3103 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = Frameworks/ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		E5BF60851ABD713A00FB3103 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = Frameworks/ParseUI.framework; sourceTree = "<group>"; };
 		E5BF608B1ABD724100FB3103 /* hAngry-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hAngry-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5BF608E1ABD769100FB3103 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				E5BF60441ABD6E9D00FB3103 /* Info.plist */,
+				E5BF608E1ABD769100FB3103 /* Keys.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5BF608F1ABD769100FB3103 /* Keys.plist in Resources */,
 				E5BF604E1ABD6E9D00FB3103 /* Main.storyboard in Resources */,
 				E5BF60531ABD6E9D00FB3103 /* LaunchScreen.xib in Resources */,
 				E5BF60501ABD6E9D00FB3103 /* Images.xcassets in Resources */,

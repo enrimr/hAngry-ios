@@ -20,11 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // [Optional] Power your app with Local Datastore. For more info, go to
         // https://parse.com/docs/ios_guide#localdatastore/iOS
-        Parse.enableLocalDatastore();
+        Parse.enableLocalDatastore()
         
-        // Initialize Parse.
-        Parse.setApplicationId("I3xmnfNLODINwmqRCZD13LUkvZQVjK3fkoyb5Aan",
-                                clientKey: "TLpORbJfwJiWljLVnmnR5sdMVsqYr26BHzmJVXZj");
+        var keys: NSDictionary?
+        if let path = NSBundle.mainBundle().pathForResource("Keys", ofType: "plist") {
+            keys = NSDictionary(contentsOfFile: path)
+        }
+        if let dict = keys {
+            var applicationId = keys?["parseApplicationId"] as? String
+            var clientKey = keys?["parseClientKey"] as? String
+            
+            // Initialize Parse.
+            Parse.setApplicationId(applicationId!, clientKey: clientKey!)
+        }
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
